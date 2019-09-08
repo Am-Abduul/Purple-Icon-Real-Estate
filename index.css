@@ -78,35 +78,52 @@ ul.dropdown-menu a{
   }
 }
 
-.whatWeDoSectionContainers{
-  padding: 50px 50px;
+.pageHeader{
+  margin-bottom: 30px;
+}
+
+.whatWeDoSectionContainers1{
+  padding: 80px 50px;
+  background-color: white;
+}
+
+.whatWeDoSectionContainers2{
+  padding: 80px 50px;
   background-color: #f0f0f0;
 }
 
 .whatWeDoContainers{
-  /* padding: 0 50px; */
-  /* border-radius: 10px; */
+  padding: 30px;
+  margin: 10px;
+  border-radius: 5px;
+  color: #4c0080;
   /* color: white; */
   /* background-color: #f0f0f0; */
-
 }
 
 .whatWeDoContainerLeft{
-  /* color: #4c0080;
   background: url(../Images/construction-contracts-and-law.jpg) no-repeat;
   background-size: auto;
-  background-attachment:inherit; */
+  background-attachment:inherit;
+  /* opacity: 0.6;
+  filter: alpha(opacity=60);*/
+   /* For IE8 and earlier */
 }
 
 .whatWeDoContainerRight{
-  /* color: #4c0080;
   background: url(../Images/sound-x-blog-Build-the-Smart-Home-of-your-dreams.jpg) no-repeat;
   background-size: auto;
-  background-attachment:inherit; */
+  background-attachment:inherit;
+}
+
+.whatWeDoContainerpic{
+  /* padding: 15px; */
+  max-width: 100%;
+  height: auto;
 }
 
 #whatWeDoHeder{
-  margin-bottom: 60px;
+  margin-bottom: 85px;
 }
 
 #whatWeDoInnerHeder{
@@ -180,6 +197,10 @@ ul.dropdown-menu a{
 /* #slider1{
   background: url('http://www.10stunninghomes.com/wp-content/uploads/Futuristic-House-Relaxing-Area-With-Stunning-Pool.jpg') no-repeat center center;
 } */
+.aboutPageHeaderLine{
+  width: 200px;
+  border-top: 3px solid #e7e7e7;
+}
 
 .content-section-c {
   padding: 50px 0;
@@ -313,4 +334,71 @@ p.copyright {
 
 .lightPurpleText{
   color: #e09bff;
+}
+
+/* experiment div style */
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+}
+
+.portfolio-item .caption {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.portfolio-item .caption .caption-content {
+  color: #fff;
+  margin: auto 2rem 2rem;
+}
+
+.portfolio-item .caption .caption-content h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.portfolio-item .caption .caption-content p {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 992px) {
+  .portfolio-item {
+    max-width: none;
+    margin: 0;
+  }
+  .portfolio-item .caption {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+  }
+  .portfolio-item .caption .caption-content {
+    transition: opacity 0.25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+  .portfolio-item img {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+  }
+  .portfolio-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+  .portfolio-item:hover .caption {
+    background-color: rgba(29, 128, 159, 0.9);
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
 }

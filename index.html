@@ -65,12 +65,10 @@
     <!-- Page Content -->
 
     <!-- What we do section -->
-    <section class="whatWeDoSectionContainers">
+    <section class="whatWeDoSectionContainers1">
       <h2 class="section-header text-center darkPurpleText" id="whatWeDoHeder"><b>What we do</b></h2>
       <div class="container">
         <div class="row">
-          <div class="col">
-          </div>
           <div class="col-6">
             <div class="container whatWeDoContainers whatWeDoContainerLeft text-center">
               <h3 class="darkPurpleText whatWeDoInnerHeder">Construction</h3>
@@ -79,13 +77,53 @@
               </p>
             </div>
           </div>
-          <div class="col">
+          <div class="col-6">
+            <div class="container whatWeDoContainers whatWeDoContainerRight text-center">
+              <h3 class="darkPurpleText whatWeDoInnerHeder">Property Management</h3>
+              <p class="fairPurpleText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="row">
+      </div>
+
+      <!-- experiment div -->
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <div class="text-center container">
+              <a class="portfolio-item" href="#">
+                <span class="caption">
+                  <span class="caption-content">
+                    <h2>Property Management</h2>
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam.</p>
+                  </span>
+                </span>
+                <img class="img-fluid" src="Images\construction-contracts-and-law.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Ice Cream</h2>
+                  <p class="">A dark blue background with a colored pencil, a cli;lnBDVIKCBJ ibh efvip;kB PIC BUVQIC BPIU ivfpue c[ion fvp, and a tiny ice cream cone!</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="Images\construction-contracts-and-law.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+        <!-- <hr class="aboutPageHeaderLine"> -->
+
+        <!-- <div class="row">
           <div class="col">
             <div class="container">
-              <img src="Images\construction-contracts-and-law.jpg" alt="" class="img-fluid">
+              <img src="Images\construction-contracts-and-law.jpg" alt="" class="img-fluid img-thumbnail">
             </div>
           </div>
           <div class="col-6">
@@ -98,7 +136,7 @@
           </div>
           <div class="col">
           </div>
-        </div>
+        </div> -->
 
 
         <!-- <div class="row">
@@ -110,9 +148,7 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-1">
-          </div> -->
-          <!-- <div class="col-6">
+          <div class="col-6">
             <div class="container whatWeDoContainers whatWeDoContainerRight text-center">
               <h3 class="darkPurpleText whatWeDoInnerHeder">Property Management</h3>
               <p class="fairPurpleText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -120,8 +156,8 @@
               </p>
             </div>
           </div>
-        </div> -->
-      </div>
+        </div>
+      </div> -->
     </section>
 
     <!-- projects section -->
@@ -192,7 +228,7 @@
     <section class="content-section-b">
 
      <h2 class="section-header text-center darkPurpleText" id="projectSectionHeader"><b>LATEST PROJECTS</b></h2>
-     <!-- Carousel
+     <!-- Carousel Slider
      ================================================== -->
      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
              <ol class="carousel-indicators">
@@ -232,7 +268,7 @@
                <span class="sr-only">Next</span>
              </a>
            </div>
-     <!-- /.carousel -->
+     <!-- /.carousel slider -->
      </section>
 
     <!-- /.content-section-b -->
@@ -310,7 +346,7 @@
       <section id="contact" class="contact darkPurpleText">
         <div class="container">
             <div class="col-lg-12 text-center">
-                <h2><strong>Interested much?<br/> You can use any of the mediums below to contact us.</strong></h2>
+                <h2><strong>Interested much?<br/> You can use any of the mediums below to get in touch.</strong></h2>
                   <p class="fairPurpleText">Plot 111 IPent 2 Estate
                     <br>Lokogoma Abuja, NG 900104</p>
                       <ul class="list-unstyled">
@@ -339,6 +375,17 @@
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
+
+    <!-- experiment div JS -->
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+
+
+
+
     <!-- scroll reveal link -->
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
@@ -355,7 +402,7 @@
         duration: 2000,
         origin: 'left',
         //distance: '300px',
-        viewfactor: 0.2
+        viewfactor: 0.02
       });
 
       sr.reveal('.whatWeDoContainerRight', {

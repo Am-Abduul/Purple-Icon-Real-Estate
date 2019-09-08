@@ -11,11 +11,9 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 body{
-  /* color: white !important;
-  background: url(../Images/cfdfcef.jpg) no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed; */
+  margin-top: 50px;
 }
+
 @media (min-width: 992px) {
     body {
         padding-top: 56px;
@@ -42,7 +40,18 @@ header.masthead > .overlay {
     background: rgba(0, 0, 0, 0.4);
 }
 
-.aboutPageHeader{
+.content-section-b {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  border: 0;
+}
+
+.projectsHeader{
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+.LocationsPageHeader{
   padding-left: 25px;
   padding-top: 65px;
   padding-bottom: 65px;
@@ -50,25 +59,10 @@ header.masthead > .overlay {
   color: white;
 }
 
-/* h2.aboutPageHeader{
-  text-align: center;
-  padding-left: 0px;
-  color: #4c0080;
-} */
-
-.aboutPageHeaderLine{
-  width: 200px;
-  border-top: 3px solid #e7e7e7;
-}
-
-.aboutPageHeadPic{
+.locationPageHeadPic{
   background: url(../Images/2purple.jpg) no-repeat center center;
   background-size: contain;
   background-attachment: fixed;
   height: auto;
   width: 100%;
-}
-.aboutPagePic{
-  width: 300px;
-  height: 300px;
 }
